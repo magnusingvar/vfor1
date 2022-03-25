@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock, Paper, Scissors | Lokaverkefni</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/game.css"/>
+    <link rel="icon" href="./icon.ico">
+</head>
+<body>
+<div class="other">
+    <button id="logout-btn">Logout</button>
+</div>
+<div id="game">
+    <h1>ROCK, PAPER, SCISSORS</h1>
+    <div id="message"></div>
+    <div id="score">
+        <div id="currScore">
+            <label>Wins -</label> <span id="win"></span> |
+            <label>Losses -</label> <span id="lose"></span> |
+            <label>Draws -</label> <span id="draw"></span>
+            <div id="curr-winloss"></div>
+        </div>
+        <div id="prevScore">
+            Wins - <span id="prevWin"></span> |
+            Losses - <span id="prevLose"></span> |
+            Draws - <span id="prevDraw"></span>
+            <div id="prev-winloss"></div>
+        </div>
+    </div>
+    <div class="choices">
+        <div class="r">
+            <button id="r" onclick="game('Rock')"></button>
+        </div>
+        <div class="p">
+            <button id="p" onclick="game('Paper')"></button>
+        </div>
+        <div class="s">
+            <button id="s" onclick="game('Scissors')"></button>
+        </div>
+    </div>
+    <div id="msg"></div>
+</div>
+
+<script src="./js/game.js"></script>
+
+</body>
+</html>

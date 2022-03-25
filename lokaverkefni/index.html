@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lokaverkefni</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css"/>
+    <link rel="icon" href="icon.ico">
+</head>
+<body>
+<div class="container">
+    <div class="register-container">
+        <h3>Register</h3>
+        <input id="name" type="text" placeholder="Username" value="" autocomplete="off"/>
+        <input id="pw" type="password" placeholder="Password" value="" autocomplete="off"/>
+        <input id="btn-reg" type="submit" value="Register user" onClick="store()"/> 
+    </div>
+    <div class="login-container">
+        <h3>Login</h3>
+        <input id="userName" type="text" placeholder="Username"" autocomplete="off"/>
+        <input id="userPw" type="password" placeholder="Password" autocomplete="off"/>
+        <input id="btn-log" type="submit" value="Login" onClick="check()"/> 
+    </div>
+   <div id="error"></div>
+</div>
+<script src="./js/script.js"></script>
+</body>
+</html>

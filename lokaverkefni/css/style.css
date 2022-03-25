@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    color: #000000;
+    background: #F9F9F9;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {outline: none;}
+
+.container {height: 100%; text-align: center;}
+
+h3 {
+    width: 200px;
+    margin: 0 auto;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #000;
+}
+
+.register-container {
+    width: 340px;
+    margin: 10px;
+    display: inline-block;
+    padding: 10% 0 3% 0;
+}
+
+.login-container {
+    width: 340px;
+    margin: 10px;
+    display: inline-block;
+    padding: 10% 0 3% 0;
+}
+
+input[type=text], input[type=password] {
+    min-width: 340px;
+    min-height: 50px;
+    width: auto;
+    height: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    font-size: 100%;
+    border-radius: 2px 2px 2px 2px;
+}
+
+input#name {margin-top: 12px; margin-bottom: 4px;} 
+
+input#pw {margin-bottom: 10px;}
+
+input#userName {margin-top: 12px; margin-bottom: 4px;}
+
+input#userPw {margin-bottom: 10px;}
+
+input[type=text]:focus, input[type=password]:focus {
+    min-width: 340px;
+    width: auto;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #3B3C36;
+    box-sizing: border-box;
+    -webkit-box-shadow: 6px 6px 14px 0px rgba(59,60,54,1);
+    -moz-box-shadow: 6px 6px 14px 0px rgba(59,60,54,1);
+    box-shadow: 6px 6px 14px 0px rgba(59,60,54,1);
+    transform: scale(1.020);
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+#btn-reg {
+    width: 100%;
+    height: 50px;
+    border-radius: 2px;
+    float: left;
+    background: #838383;
+    border: none;
+    color: #fff;
+    font-size: 100%;
+}
+
+#btn-reg:hover {cursor: pointer; background: #6a6a6a; border: 1px solid #000;}
+
+#btn-reg:focus {cursor: pointer; background: #6a6a6a; border: 1px solid #000;}
+
+#btn-log {
+    width: 100%;
+    height: 50px;
+    border-radius: 2px;
+    float: left;
+    background: #2196F3;
+    border: none;
+    color: #fff;
+    font-size: 100%;
+}
+
+#btn-log:hover {cursor: pointer; background: #1976D2; border: 1px solid #000;}
+
+#btn-log:focus {cursor: pointer; background: #1976D2; border: 1px solid #000;}
+
+#error {text-align: center; width: auto; height: 100%;}

@@ -1,0 +1,37 @@
+<!doctype HTML>
+<html>
+<head>
+    <title>Verkefni 15</title>
+
+</head>
+<body>
+    <script src="script.js"></script>
+    <p id="strengur"></p>
+
+</body>
+
+</html>
+ 
+
+function HtmlTag(id){
+
+    return string
+
+}
+ 
+
+function output(id,string){
+    string.innerHTML = str
+
+}
+
+ 
+
+function output2(){
+    output()
+
+}
+
+string=document.getElementById("strengur")
+
+str="123456789"

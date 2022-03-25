@@ -1,0 +1,179 @@
+html {
+	--bg: #d6d6d6;
+}
+
+body {
+	background: var(--bg);
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+	outline: none;
+}
+
+#page {
+	max-width: 820px;
+	max-height: 1000px;
+	margin: 0px auto;
+}
+
+#header {
+	margin: 30px 0px 0px 0px;
+	padding: 5px 0 5px 0;
+	background: #fff;
+	border-bottom: 1px solid #000;
+	border-radius: 12px 12px 0px 0px;
+}
+
+#logo {
+	padding: 35px 35px 50px 35px;
+	background: url("n-icon.png") no-repeat;
+	background-position: center;
+	background-size: 80px;
+	border-bottom: 1px solid #000;
+}
+
+.search {
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px 0px 8px 0px;
+}
+
+input[type="text"] {
+	border: none;
+	border-bottom: 1px solid #000;
+	max-width: 227px;
+	margin: 0px 0px 0px 0px;
+	padding: 5px 34px 4px 5px;
+	font-size: 90%;
+	height: 25px;
+	transition: ease-in .5s;
+}
+
+input[type="text"]:hover {
+	transform: ease-in .2s;
+}
+
+input[type="text"]:focus {
+	transition: ease-in-out .1s;
+	transform: scale(1.1);
+}
+
+#src-btn {
+	color: transparent;
+	margin-left: -44px;
+	padding: 0px;
+	background: url("src-icon.png") no-repeat;
+	background-position: center;
+	background-size: 25px;
+	height: 25px;
+	border: none;
+	transform: scale(1.1);
+}
+
+#src-btn:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+ul {
+	margin: 0;
+	padding: 4px 0px 10px 0px;
+}
+
+#nav-bar li {
+	list-style: none;
+	margin: 15px 6px 0px 0px;
+	display: inline-block;
+	text-transform: uppercase;
+	color: #5f5f5f;
+}
+
+li {
+	transition: transform .2s;
+}
+
+li:hover {
+	transform: scale(0.9);
+}
+
+#on {
+	text-decoration: underline;
+	color: #2f2f2f;
+	font-size: 125%;
+}
+
+#content {
+	max-width: 820px;
+	min-width: 70px;
+	background: #fff;
+	max-height: 2640px;
+	min-height: 400px;
+	padding: 0px 10px 0px 10px;
+	border-radius: 0 0 10px 10px;
+	margin-bottom: 10px;
+}
+
+.entry {
+	display: inline-block;
+	max-width: 273px;
+	min-width: 146px;
+	margin: 10px auto;
+	height: 198px;
+}
+
+.figtitle p {
+	padding: 4px 0 4px 0;
+	margin: 0px;
+	border-bottom: 1px solid #5f5f5f;
+}
+
+.figdesc {
+	padding: 4px 0 4px 0;
+	margin: 0px;
+}
+
+figure {
+	min-width: 200px;
+	display: block;
+	width: auto;
+	height: 170px;
+	background: transparent;
+	margin: 0px;
+	padding: 9px;
+	text-align: left;
+}
+
+figure img {
+	max-width: 226px;
+	height: 150px;
+	border: 1px solid #5f5f5f;
+	border-bottom: 0px;
+	border-radius: 4px 4px 0px 0px;
+}
+
+figcaption {
+	padding: 2px;
+	margin-top: -4px;
+	border: 1px solid #5f5f5f;
+	border-radius: 0px 0px 4px 4px;
+	padding-left: 8px;
+}
+
+footer {
+	color: #5f5f5f;
+	border-top: 1px solid #000;
+	margin: 60px 0px 20px 0px;
+	padding: 25px 0px 0px 0px;
+}
+
+.mail {
+	display: inline-block;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+	background: url("m-icon.png") no-repeat;
+	background-size: 25px;
+}

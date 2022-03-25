@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: #121212;
+  color: #fff; 
+  overflow: hidden; 
+  margin: 0; 
+  -webkit-transition: ease-in-out .2s;
+}
+
+* {
+  border: none; 
+  outline: none;
+}
+
+#game {
+  margin-top: 35px;
+}
+
+h1 {
+  position: relative;
+  font-size: 40px;
+  text-align: center;
+  margin: 2px 0px 2px 0px;
+  padding: 10px 0px 10px 0px;
+  -webkit-animation-name: fadein, width;
+  -webkit-animation-duration: 1s, .7s;
+}
+
+.other {
+  text-align: right;
+  height: 0px;
+}
+
+#logout-btn {
+  background: #121212 ; color: #fff;
+  padding-bottom: 10px;
+  margin: 15px 15px 15px 5px;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+  transition: transform .2s;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+}
+
+#logout-btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transform: scale(1.1) rotate(5deg);
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+#message {
+  font-size: 18px;
+  text-align: center;
+  padding: 3px 0px 3px 0px;
+  margin-bottom: 10px; 
+  -webkit-animation-name: fadein, width;
+  -webkit-animation-duration: 1s, .7s;
+}
+
+.win-loss {
+  min-width: 300px;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#score {
+  text-align: center;
+  font-size: 25px;
+  margin: 0 auto;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  min-width: 450px;
+  max-width: 600px;
+  min-height: 0px;
+  max-height: 90px;
+  -webkit-animation-name: fadein, width;
+  -webkit-animation-duration: 1s, 1.4s;
+}
+
+#currScore {
+  display: block;
+  text-align: center;
+  min-width: 400px;
+  max-width: 600px;
+  font-size: 100%;
+}
+
+#currScore label {
+  font-size: 70%;
+}
+
+#win {
+  color: #30cf30;
+}
+
+#lose{
+  color: #ff0000;
+}
+
+#draw {
+  color: #9CC0E7;
+}
+
+#curr-winloss {
+  margin: 0px 0px 0px 2px;
+  font-size: 70%;
+  display: inline-block;
+}
+
+#prevScore {
+  color: #fff;
+  display: block;
+  opacity: .9;
+  padding: 8px 0px 0px 0px;
+  text-align: center;
+  min-width: 400px;
+  max-width: 600px;
+  font-size: 80%;
+  max-height: 24px;
+}
+
+#prev-winloss {
+  margin: 0px 0px 0px 2px;
+  font-size: 70%;
+  display: inline-block;
+}
+
+.choices {
+  padding-top: 20px;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.r, .p, .s {
+  position: inherit;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  margin: 40px;
+
+}
+
+button#r {
+  position: relative;
+  animation: popup .7s linear;
+  height: 250px; 
+  width: 250px;
+  background: transparent;
+  background-image: url("../images/rock.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  transition: transform .2s;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+}
+
+button#p {
+  position: relative;
+  animation: popup .7s linear;
+  height: 250px; 
+  width: 250px;
+  background: transparent;
+  background-image: url("../images/paper.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  transition: transform .2s;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+}
+
+button#s {
+  position: relative;
+  animation: popup .7s linear;
+  height: 250px; 
+  width: 250px;
+  background: transparent;
+  background-image: url("../images/scissors.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  transition: transform .2s;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+}
+
+button#r:hover {
+  cursor: pointer;
+  opacity: .6;
+  transform: scale(1.5) rotate(5deg);
+}
+
+button#p:hover {
+  cursor: pointer;
+  opacity: .6;
+  transform: scale(1.5) rotate(5deg);
+}
+
+button#s:hover {
+  cursor: pointer;
+  opacity: .6;
+  transform: scale(1.5) rotate(5deg);
+}
+
+#msg {
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 85px 10px 15px 10px;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #535353;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #838383;
+}
+
+@media only screen and (max-width: 1920px) {
+  .r, .p, .s {
+    width: 280px;
+    height: 280px;
+  }
+
+  button#r {
+    width: 280px;
+    height: 280px;
+  }
+
+  button#p {
+    width: 280px;
+    height: 280px;
+  }
+
+  button#s {
+    width: 280px;
+    height: 280px;
+  }
+
+  #msg {
+    padding: 40px 10px 10px 10px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  body {
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+  #logout-btn {
+    font-size: 100%;
+  }
+
+  #score {
+    width: 400px;
+    font-size: 100%;
+  }
+
+  #currScore {
+    min-width: 230px;
+  }
+
+  #prevScore {
+    min-width: 230px;
+  }
+
+  .choices {
+    padding: 0px;
+  }
+
+  .r, .p, .s {
+    width: 150px;
+    height: 150px;
+  }
+
+  button#r {
+    width: 150px;
+    height: 150px;
+  }
+
+  button#p {
+    width: 150px;
+    height: 150px;
+  }
+
+  button#s {
+    width: 150px;
+    height: 150px;
+  }
+
+  #msg {
+    font-size: 15px;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 1054px) {
+  body {
+    text-align: center;
+    overflow-x: hidden; 
+    overflow-y: visible;
+  }
+
+  #logout-btn {
+    font-size: 70%;
+  }
+
+  h1 {
+    font-size: 17px;
+  }
+  
+  #message {
+    font-size: 12px;
+  }
+
+  #score {
+    max-width:  300px;
+    min-width: 280px;
+    width: auto;
+    font-size: 80%;
+  }
+
+  .choices {
+    padding: 0px;
+  }
+
+  .r, .p, .s {
+    width: 100px;
+    height: 100px;
+  }
+
+  button#r {
+    width: 100px;
+    height: 100px;
+  }
+
+  button#p {
+    width: 100px;
+    height: 100px;
+  }
+
+  button#s {
+    width: 100px;
+    height: 100px;
+  }
+
+  #msg {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    text-align: center; 
+    overflow-x: hidden; 
+    overflow-y: visible;
+  }
+
+  h1 {
+    font-size: 85%;
+  }
+
+  #message {
+    font-size: 70%;
+  }
+
+  #score {
+    max-width: 250px;
+    min-width: 100px;
+    width: 100%;
+    font-size: 60%;
+  }
+
+  #currScore {
+    min-width: 230px;
+  }
+
+  #prevScore {
+    min-width: 230px;
+  }
+
+  .choices {
+    padding: 0px;
+  }
+
+  .r, .p, .s {
+    width: 90px;
+    height: 90px;
+  }
+
+  button#r {
+    width: 90px;
+    height: 90px;
+  }
+
+  button#p {
+    width: 90px;
+    height: 90px;
+  }
+
+  button#s {
+    width: 90px;
+    height: 90px;
+  }
+
+  #msg {
+    padding: 2px;
+    font-size: 8px;
+  }
+}
+
+@-webkit-keyframes width{
+  from {width: 18%;}
+  to {width: 100%;}
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes popup {
+  0% {
+    bottom: -1500px;
+  }
+  50% {
+    bottom: 0px;
+  }
+}
